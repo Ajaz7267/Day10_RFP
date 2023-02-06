@@ -207,28 +207,7 @@ public class AddressBook{
 
     }
 
-    public void NoOfContactPersons() {
-        System.out.println("please enter state or city :");
-        String selection = sc.nextLine();
-        int count = 0;
-        for (int j = 0; j < people.size(); j++)
-        {
-            AddressBook person = people.get(j);
-            if (person.city.equals(selection) || person.state.equals(selection))
-            {
-                count++;
-            }
-            else {
-                System.out.println("No contact Found");
-            }
-
-        }
-        System.out.println("List of persons in a AdressBook are :" + count);
-
-
-
-
-    }
+   
 
 
 }
